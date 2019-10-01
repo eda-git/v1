@@ -1,0 +1,428 @@
+$headerbgcolor: #6e1106;
+$wrapperbgcolor: #fc8808;
+$aboutbgcolor: #5e2e14;
+$experiencebgcolor: #443d28;
+$contactbgcolor: #004913;
+$footerbgColor: #000;
+$fontStack1: 'Montserrat', sans-serif;
+$fontStack2: 'Raleway', sans-serif;
+
+$lightestColor: #FFF;
+$lightestText: #FFF;
+$darkestColor: #000;
+$darkestText: #000;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+/* Structure */ 
+html, body {
+  margin: 0 auto;
+}
+
+body {
+  height: 2800px;
+  overflow-x:hidden;
+}
+
+#menu {
+  z-index: 3;
+  width: 100%;
+  height: 20%;
+}
+
+#headerMenu {
+  z-index: 5;
+  width: 100%;
+  height: 11%;
+  border-radius: 2px;
+  position: fixed;
+  border: solid 1px;
+  display: flex;
+  background: $headerbgcolor;
+}
+div#textMenu {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+#textMenu a {
+  margin-right: 3em;
+}
+#textMenu a {
+  color: $lightestText;
+  text-decoration: none;
+  font-family: $fontStack1;
+}
+
+#logo #text {
+  z-index: 4;
+  width: 100%;
+  height: 76%;
+  color: $lightestText;
+  font-family: $fontStack1;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  bottom: 1px;
+  left: 15%;
+}
+
+
+#logo {
+  z-index: 4;
+  width: 3em;
+  height: 3em;
+  border: solid 5px;
+  border-radius: 100%;
+  margin-top: 0.5em;
+  position: relative;
+  margin-left: 1%;
+}
+
+/* Wrapper */ 
+
+#wrapper {
+  z-index: 3;
+  width: 100%;
+  height: 28%;
+
+  background: $wrapperbgcolor;
+  border: solid 1px;
+}
+
+#wrapperHolder {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+margin-top:10%;
+margin-left:2%;
+}
+
+#bannerText {
+  z-index: 4;
+  color: $lightestText;
+  font-family: $fontStack1;
+  font-size: 5em;
+  font-style: italic;
+  font-weight: 700;
+  width:49%;
+  text-shadow: 2px 4px #000;
+}
+
+#headlineText {
+  z-index: 4;
+  color: $lightestText;
+  font-family: $fontStack2;
+  font-size: 5em;
+  text-shadow: 2px 4px #000;
+}
+
+#line {
+  z-index: 4;
+  width: 30%;
+  height: 1%;
+  background: $lightestText;
+}
+
+#button {
+  z-index: 3;
+  width: 14%;
+  height: 14%;
+}
+
+#buttonShape {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border: solid 12px;
+}
+
+#innerText {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  color: $lightestText;
+  font-family: $fontStack2;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 85px;
+  text-align: center;
+}
+div#buttonShape a {
+  color: $lightestText;
+  text-decoration: none;
+}
+div#buttonShape:hover {
+  background: #ffffff78;
+}
+
+div#buttonShape:hover #innerText {
+  color: #000;
+}
+div#wrapperButtonControls {
+  position: relative;
+  display:inline;
+  width: 90%;
+}
+
+div#wrapperButtonControls div#button {
+  right: 0;
+  padding-right: 4%;
+}
+
+div#wrapperButtonControls div#innerText {
+  font-size: 2em;
+}
+
+
+div#group {
+  display: inline-flex;
+  float: right;
+  margin-right: 2em;
+}
+
+div#group #button {
+  width: 14em;
+  margin-right: 2em;
+}
+
+/* Section */
+#section {
+  z-index: 3;
+  width: 100%;
+  height: 28%;
+  border: solid 1px;
+}
+#sectionHolder {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+#sectionHolder #line {
+  z-index: 4;
+  width: 20%;
+    height: 7%;
+  background: $lightestText;
+}
+div#sectionHolder div#title {
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  height: 15%;
+}
+
+div#sectionHolder div#subject {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#section #content { display: flex; height:80%}
+// About
+
+
+#section.about #boxSub {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#section.about #person #boxSub{
+  height: 40%;
+}
+
+div#skills div#boxSub {
+  height: 90%;
+}
+
+
+#section.about{
+  background: $aboutbgcolor;
+}
+
+#person {
+  width: 40%;
+  margin-top: 2%;
+}
+#skills {
+  width: 60%;
+  margin-top: 2%;
+  height: 80%;
+}
+
+#section.about #icon {
+  width: 9em;
+  height: 9em;
+  border-radius:100%;
+  display:inline-block;
+  
+}
+
+#section.about #icon {
+  border: solid 3px $lightestText;
+}
+div#box {
+  width: 70%;
+  margin: 0 auto;
+}
+#section.about #boxSub {
+  border: solid 3px $lightestText;
+  background: $darkestColor;
+  color: $lightestText;
+  font-family: $fontStack2;
+ }
+
+ #section.about #boxSub {
+  width: 100%;
+  overflow-y: scroll;
+  font-size:2em;
+ }
+#section.about #iconController {
+  display: table;
+  margin: 0 auto;
+  margin-bottom:1%;
+}
+#section.about #boxHead {
+  width: 100%;
+  height: 10%;
+  font-size:2em;
+}
+
+#section.about #boxHead {
+  border: solid 3px $lightestText;
+  font-family: $fontStack2;
+  background: $lightestText;
+  color: $darkestColor;
+  
+}
+
+#boxHeadText {
+  z-index: 5;
+  width: 750px;
+  height: 110px;
+  font-family: $fontStack2;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 85px;
+}
+
+/* Experience */
+
+#section.experience{
+  background: $experiencebgcolor;
+}
+div#description {font-family: $fontStack1;}
+
+div#set h3 {font-family: $fontStack2;}
+
+#section.experience div#item {
+  margin: 0 auto;
+  border-style: solid;
+  border-color: $lightestColor;
+  width: 80%;
+  height: 90%;
+  margin-top: 1%;
+  background:$darkestColor;
+
+  overflow-y: auto;
+}
+div#photo {
+  width: 40%;
+  height: 100%;
+}
+#photo{ 
+  background: rgb(54, 54, 54);
+}
+
+#description{ 
+  color: $lightestColor;
+}
+
+div#description.full{
+  width:100%;
+}
+
+
+div#description {
+  width: 60%;
+  height: 100%;
+}
+
+div#set {display: flex;height: 100%;}
+
+/* Contact */
+
+div#section.contact {
+  background: $contactbgcolor;
+
+ }
+
+ div#section.contact #sectionHolder {
+  margin: 0 auto;
+}
+
+div#section.contact #line {
+  width: 90%;
+  margin: 0 auto;
+  height: 2%;
+    margin-top: 2%;
+}
+
+div#section.contact #headlineText {
+  text-align: center;
+}
+
+div#section.contact p {
+  text-align: center;
+}
+div#section.contact p {
+  color: $lightestColor;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+}
+div#section.contact #button {display: inline-flex;padding-right: 10%;margin-left: 10%;}
+
+div#buttonContact {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer */
+
+div#section.contact p {
+  color: $lightestColor;
+  font-family: $fontStack1;
+  font-size: 2em;
+}
+
+footer {
+  height: 3%;
+  background: $darkestColor;
+}
+
+div#flexer {
+  color: $lightestColor;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+div#vertLine {
+  height: 4em;
+  width: 0.3em;
+  background: $lightestColor;
+  margin-left: 20;
+}
+
+#flexer div#content {
+  margin-left: 2em;
+  font-family: $fontStack2;
+  font-size: 1.6em;
+}
+
+#flexer a {
+  color: $lightestColor;
+  text-decoration: none;
+}
