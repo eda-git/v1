@@ -426,3 +426,31 @@ div#vertLine {
   color: $lightestColor;
   text-decoration: none;
 }
+
+@media only screen and (max-device-width: 900px)
+{
+    div#headerMenu {
+    height: 5%;
+  }
+
+  div#logo {  
+    margin-top: 1em;
+  }
+
+  #textMenu a {
+    font-size: 1.4em;
+  }
+
+  #section.about #icon {
+    width: 7em;
+    height: 7em;
+  }
+
+  div#box {
+    width: 80%;
+  }
+
+  div#button {
+    width: 19%;
+  }
+}
